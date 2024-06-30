@@ -1,0 +1,11 @@
+server:
+  port: 8080
+  host: 0.0.0.0
+  features:
+    concurrency-limiter:
+      enabled: true
+      limiter:
+        basic:
+          limit:
+            aimd:
+              timeout: PT1S
